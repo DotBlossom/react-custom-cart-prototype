@@ -1,0 +1,47 @@
+/* temp.css */
+.container {
+  display: flex;
+}
+
+.item-box {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+
+}
+
+.target-box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.item-node {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: grab;
+  position: relative;
+}
+
+.target-item {
+  position: absolute;
+  background-color: #eee;
+  padding: 10px;
+  cursor: grab;
+}
+
+.target-item button {
+  /* 버튼 스타일 */
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
