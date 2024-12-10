@@ -14,7 +14,7 @@ export default function AsyncPropagationsPage() {
       );
       console.log('first is on');
       invokeRef.current = response.data;
-      
+      // response.data는 object 형임. 잘 담김.
     } catch (e) {
       console.log(e);
     }
