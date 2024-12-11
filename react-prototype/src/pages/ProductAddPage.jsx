@@ -25,8 +25,13 @@ export default function ProductAddPage() {
       {
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin" : "*",
+          'Access-Control-Allow-Headers': '*',
+          'Access-Control-Allow-Methods': '*',
+          "Accept": "application/json",
 
         },
+
       }
     );
     
@@ -35,6 +40,8 @@ export default function ProductAddPage() {
     invoke_server(invokeRef);
   };
 
+
+
   // INVOKE
   const invoke_server = async (req) => {
     const parsedReq = req.current;
@@ -42,7 +49,7 @@ export default function ProductAddPage() {
       "product_id": parsedReq.code,
       "product": {
         "product_name": parsedReq.name,
-        "product_category": parsedReq.category,
+        "product_categoty": parsedReq.category,
         "product_price": parsedReq.price,
         "product_thumbnail": parsedReq.thumbnail,
         "product_stock": parsedReq.stock,
