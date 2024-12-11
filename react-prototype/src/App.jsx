@@ -2,8 +2,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CustomCartPage from './pages/CustomCartPage';
-import AsyncPropagationsPage from './pages/AsyncPropagationsPage';
-
+import ProductAddPage from './pages/ProductAddPage';
 
 function App() {
 
@@ -13,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path ="/" element={<CustomCartPage />} ></Route>
-          <Route path ="/props" element={<AsyncPropagationsPage />} ></Route>
+          <Route path ="/props" element={<ProductAddPage />} ></Route>
 
         </Routes>
       </BrowserRouter>
